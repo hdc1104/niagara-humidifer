@@ -3,13 +3,13 @@
 Niagara BLE 가습기를 휴대폰의 웹브라우저에서 제어하는 비공식 웹앱입니다.
 
 **웹앱 주소:** https://hdc1104.github.io/niagara-humidifer/  
-GitHub Pages 게시가 완료된 후 위 주소에서 이용할 수 있습니다.
+GitHub Pages에서 HTTPS로 제공됩니다.
 
 ## 만들어진 배경
 
 Niagara 가습기를 기존 안드로이드 앱 외의 환경에서도 사용하기 위해 시작했습니다. 제공된 Niagara APK의 통신 동작을 분석하고 실제 가습기와 통신하면서 BLE 명령과 상태 데이터를 확인했습니다. 이를 바탕으로 macOS 앱을 만들었고, 별도 설치 없이 휴대폰에서도 사용할 수 있도록 Web Bluetooth 웹앱으로 확장했습니다.
 
-Android Chrome에서 연결과 제어를 확인했으며, Samsung Internet에서는 기기 선택창이 열리지 않는 문제를 점검하고 사용자가 권한 설정을 변경한 뒤 동작을 확인했습니다. iPhone에는 BLE 지원 브라우저를 이용하는 방법을 안내합니다. GitHub Pages를 이용하면 개발용 컴퓨터를 켜두거나 로컬 인증서를 설치할 필요 없이 HTTPS로 웹앱을 열 수 있습니다.
+Android Chrome에서 연결과 제어를 확인했으며, Samsung Internet에서는 기기 선택창이 열리지 않는 문제를 점검하고 사용자가 권한 설정을 변경한 뒤 동작을 확인했습니다. iPhone에서는 사용자가 Bluefy로 실제 연결과 동작을 확인했습니다. GitHub Pages를 이용하면 개발용 컴퓨터를 켜두거나 로컬 인증서를 설치할 필요 없이 HTTPS로 웹앱을 열 수 있습니다.
 
 이 프로젝트는 가습기 제조사와 관계없는 개인 프로젝트입니다. BLE 호환 동작을 구현하기 위해 원본 Android 앱을 디스어셈블하여 통신 정보를 참고했으며, 분석 결과를 바탕으로 웹용 코드를 새로 작성했습니다. 별도의 독립 팀을 둔 클린룸 개발로 주장하지 않습니다. 원본 APK, 제조사 앱의 이미지 및 원본 코드는 배포하지 않습니다. Niagara 명칭과 관련 상표의 권리는 해당 권리자에게 있습니다.
 
@@ -32,7 +32,7 @@ Android Chrome에서 연결과 제어를 확인했으며, Samsung Internet에서
 | --- | --- |
 | Android Chrome | Web Bluetooth 사용. 실제 연결 및 동작 확인 |
 | Android Samsung Internet | 실제 동작 확인. 브라우저 및 OS 권한 설정에 따라 차이 있음 |
-| iPhone / iPad | Bluefy 등 Web Bluetooth 지원 브라우저 필요. 실기기 연결은 아직 미검증 |
+| iPhone / iPad | iPhone Bluefy에서 사용자 실기기 동작 확인. iPad는 미검증 |
 | macOS / 기타 데스크톱 | Web Bluetooth를 제공하는 브라우저와 BLE 어댑터 필요. 이 웹앱의 전체 조합은 미검증 |
 
 일반 iPhone Safari나 Web Bluetooth를 제공하지 않는 브라우저에서는 사이트만으로 BLE 기능을 추가할 수 없습니다. iPhone 사용법은 [iPhone 안내](ios.html)를 참고하세요.
